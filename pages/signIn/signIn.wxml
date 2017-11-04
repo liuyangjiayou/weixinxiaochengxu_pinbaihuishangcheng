@@ -1,0 +1,30 @@
+<!--这是放置头部的logo图  -->
+<view class='login-logo'>
+  <image class='login-logo-img' src='https://web-app-yingxionghui.oss-cn-beijing.aliyuncs.com/back/logo.png'></image>
+</view>
+<!--这是表单  -->
+<view class='login-input-box'>
+  <view class='login-input conAuthCode'>
+    <input bindinput="bindKeyInput" maxlength="11" class='login-input-authCode' placeholder='请输入手机号'></input>
+  </view>
+  <view class='getAuthCode' bindtap='seedAuthCode'>获取验证码</view>
+</view>
+<view class='login-input'>
+  <input bindinput="importCode" password='{{false}}' class='login' placeholder='请输入验证码'></input>
+</view>
+<!--这是复选框内容  -->
+<view class='login-btn-box'>
+  <checkbox-group>
+    <label class="login-checkBox">
+      <checkbox class='loginCheckBox' checked="{{checked}}" color='red'></checkbox>阅读并同意
+    </label>
+  </checkbox-group>
+  <view class='login-btn-text'>
+    <text>《品佰惠注册协议》</text>
+    <text>《隐私政策》</text>
+  </view>
+</view>
+<!--这是下一步按钮  -->
+<view class='login-btn-box'>
+  <button catchtap='signInEnd' class='nextBtn'>下一步</button>
+</view>

@@ -1,0 +1,64 @@
+<view>
+  <!--这是轮播图  -->
+  <swiper class="swiper-box" autoplay="{{true}}" indicator-dots="{{true}}" indicator-color="#fff" indicator-active-color="#007aff" circular="{{true}}" interval="2000">
+    <swiper-item class="swiper-box-item">
+      <image src="https://web-app-yingxionghui.oss-cn-beijing.aliyuncs.com/back/find1.jpg" class="swiper-item-img"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="https://web-app-yingxionghui.oss-cn-beijing.aliyuncs.com/back/find1.jpg" class="swiper-item-img"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="https://web-app-yingxionghui.oss-cn-beijing.aliyuncs.com/back/find1.jpg" class="swiper-item-img"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="https://web-app-yingxionghui.oss-cn-beijing.aliyuncs.com/back/find1.jpg" class="swiper-item-img"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="https://web-app-yingxionghui.oss-cn-beijing.aliyuncs.com/back/find1.jpg" class="swiper-item-img"></image>
+    </swiper-item>
+  </swiper>
+  <!--这是导航列表  -->
+  <view class='nav-list'>
+    <view class='nav-list-item'>
+      <image src='https://web-app-yingxionghui.oss-cn-beijing.aliyuncs.com/back/daily.png' class='nav-list-item-img'></image>
+      <text class='nav-list-item-text'>每日推</text>
+    </view>
+    <view class='nav-list-item'>
+      <image src='https://web-app-yingxionghui.oss-cn-beijing.aliyuncs.com/back/huilife.png' class='nav-list-item-img'></image>
+      <text class='nav-list-item-text'>惠生活</text>
+    </view>
+    <view class='nav-list-item'>
+      <image src='https://web-app-yingxionghui.oss-cn-beijing.aliyuncs.com/back/revelry.png' class='nav-list-item-img'></image>
+      <text class='nav-list-item-text'>大牌狂欢</text>
+    </view>
+    <view class='nav-list-item'>
+      <image src='https://web-app-yingxionghui.oss-cn-beijing.aliyuncs.com/back/newuser.png' class='nav-list-item-img'></image>
+      <text class='nav-list-item-text'>新手上路</text>
+    </view>
+  </view>
+  <!--这是滑动导航列表  -->
+  <scroll-view class='nav-scroll-box' scroll-x="{{true}}">
+    <view class='scroll-item' wx:key="{{index}}" wx:for="{{navList}}">{{item.cat_name}}</view>
+  </scroll-view>
+  <!--这是商品列表  -->
+  <view class='list-box' wx:for="{{commodityList}}" wx:key="{{index}}">
+    <view class='list-box-left'>
+      <image style='width:220rpx;height:220rpx;' src='{{urlHeader + item.goods_img}}'></image>
+    </view>
+    <view class='list-box-right'>
+      <view class='list-box-right-title'>{{item.goods_name}}</view>
+      <view class='list-box-right-content'>
+        <view class='list-box-right-price'>
+          <text class='text'>现价:<text class='text'>{{item.shop_price}}</text> </text>
+          <text class='text'>市场价:<text class='text'>{{item.market_price}}</text> </text>
+          <text class='text'><text class='text'>库存量：{{item.goods_number}}件</text>
+          <text>评论：{{item.evaluation}}条</text></text>
+        </view>
+        <view class='list-box-right-iconBox'>
+          <image src='https://web-app-yingxionghui.oss-cn-beijing.aliyuncs.com/back/popularize.png' class='list-box-right-iconImg'></image>
+          <text class='list-box-right-icontext'>返{{item.percentage}}%</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

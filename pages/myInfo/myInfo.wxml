@@ -1,0 +1,22 @@
+<view wx:if="{{!_isShow}}">
+  <view class='login-logo'>
+    <image class='login-logo-img' src='https://mhero.pinhui100.com/WebApp/image/logo.png'></image>
+  </view>
+  <view class='login-input'>
+    <input maxlength="11" bindinput='seedPhone' class='login' placeholder='请输入您的手机号'></input>
+  </view>
+  <view class='login-input'>
+    <input bindinput='seedPassword' class='login' placeholder='请输入密码'></input>
+  </view>
+  <view class='login-btn-box'>
+    <a class="login-btn btn1">忘记密码</a>
+    <a bindtap="goToSign" class="login-btn btn2">免费注册</a>
+  </view>
+  <view class='login-btn-box'>
+    <button class="login-btn btn1 but">返回</button>
+    <button class="login-btn btn2 butRight but">登录</button>
+  </view>
+</view>
+<view wx:if="{{_isShow}}">
+  这是我的页面
+</view>

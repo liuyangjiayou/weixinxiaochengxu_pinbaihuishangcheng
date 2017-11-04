@@ -1,0 +1,48 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/massage/massage",
+    "pages/design/design",
+    "pages/myInfo/myInfo",
+    "pages/signIn/signIn"
+  ],
+  "window":{
+    "navigationBarBackgroundColor": "#e32615",
+    "navigationBarTitleText": "设计英雄汇",
+    "navigationBarTextStyle":"white",
+    "backgroundTextStyle" : "dark",
+    "enablePullDownRefresh": "true",
+    "onReachBottomDistance": 50
+  },
+  "tabBar":{
+    "backgroundColor" : "#fff",
+    "color": "#000000",
+    "selectedColor":"red",
+     "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath" : "image/shouyedian.png",
+        "selectedIconPath" : "image/shouyedian1.png"
+      },
+      {
+        "pagePath": "pages/massage/massage",
+        "text": "消息",
+        "iconPath": "image/xiaoxidian.png",
+        "selectedIconPath": "image/xiaoxidian1.png"
+      },
+      {
+        "pagePath": "pages/design/design",
+        "text": "设计",
+        "iconPath": "image/quandianji.png",
+        "selectedIconPath": "image/quandianji1.png"
+      },
+      {
+        "pagePath": "pages/myInfo/myInfo",
+        "text": "我的",
+        "iconPath": "image/wodian.png",
+        "selectedIconPath": "image/wodian1.png"
+      }
+    ]
+  }
+}
