@@ -4,6 +4,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    isShow : false,
     seedPhone: '',
     seedPassword: ''
   },
@@ -80,5 +81,33 @@ Page({
     this.setData({
       seedPassword: e.detail.value,
     })
+  },
+  // 跳转到重置密码页
+  goToSetPassword(){
+    wx.navigateTo({
+      url: '../setPassword/setPassword'
+    })
+  },
+  // 登录完成并且拿到token
+  loginEnd(){
+    var that = this;
+    if (this.data.seedPhone && this.data.seedPassword){
+      wx.request({
+        url: 'https://designer.pinhui100.com/api/user/login',
+        data: {
+          designer_phone: this.data.seedPhone,
+          designer_password: this.data.seedPassword
+        },
+        method: 'POST',
+        dataType: 'json',
+        success: function (res) {
+          console.log(res.data)
+        },
+      })
+    }else{
+      wx.showModal({
+        content : '手机号码或者密码不能为空'
+      })
+    }
   },
 })

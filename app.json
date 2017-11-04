@@ -4,7 +4,8 @@
     "pages/massage/massage",
     "pages/design/design",
     "pages/myInfo/myInfo",
-    "pages/signIn/signIn"
+    "pages/signIn/signIn",
+    "pages/setPassword/setPassword"
   ],
   "window":{
     "navigationBarBackgroundColor": "#e32615",

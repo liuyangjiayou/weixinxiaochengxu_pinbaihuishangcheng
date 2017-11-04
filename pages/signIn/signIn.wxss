@@ -28,8 +28,8 @@
 .login-input-authCode{
   width: 100%;
   border-bottom-style: solid;
-  border-bottom-color: #000;
-  border-bottom-width: 2rpx;
+  border-bottom-color: #ccc;
+  border-bottom-width: 1rpx;
   font-size: 28rpx;
   text-align: left;
 }
@@ -41,18 +41,18 @@
   display: flex;
   justify-content: center;
   flex: 1;
-  border: 2px solid red;
+  border: 1rpx solid red;
   border-radius: 20rpx;
   height: 64rpx;
   line-height: 64rpx;
-  font-size: 28rpx;
+  font-size: 24rpx;
   color: red;
 }
 .login {
   width: 630rpx;
   height: 64rpx;
   border-bottom-style: solid;
-  border-bottom-color: #000;
+  border-bottom-color: #ccc;
   border-bottom-width: 2rpx;
   font-size: 28rpx;
   text-align: left;

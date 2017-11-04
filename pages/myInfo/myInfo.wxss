@@ -1,3 +1,4 @@
+/*这是注册登录表单的样式  */
 .login-logo {
   width: 100%;
   padding: 120rpx 0;
@@ -20,7 +21,9 @@
 .login {
   width: 630rpx;
   height: 64rpx;
-  background-color: rgb(250, 255, 189);
+  border-bottom: 1rpx solid #ccc;
+  font-size: 24rpx;
+  text-align: left;
 }
 
 .login-btn-box {
@@ -35,18 +38,14 @@
 .login-btn{
   font-size: 24rpx;
 }
-.btn1{
-  margin-left: 30rpx;
-}
 .btn2{
-  margin-right: 30rpx;
   color: red;
 }
 .but{
   width: 230rpx;
   height: 80rpx;
   line-height: 80rpx;
-  font-size: 36rpx;
+  font-size: 28rpx;
   background-color: #ccc;
   color: #fff;
   font-weight: 900;
@@ -55,3 +54,4 @@
   background-color: #fd5959;
   color: #fff;
 }
+/*这是个人信息的样式  */
