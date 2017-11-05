@@ -1,3 +1,4 @@
+<!--这是显示的登录页面  -->
 <view wx:if="{{!isShow}}">
   <view class='login-logo'>
     <image class='login-logo-img' src='https://mhero.pinhui100.com/WebApp/image/logo.png'></image>
@@ -6,7 +7,7 @@
     <input maxlength="11" bindinput='seedPhone' class='login' placeholder='请输入您的手机号'></input>
   </view>
   <view class='login-input'>
-    <input bindinput='seedPassword' class='login' placeholder='密码'></input>
+    <input password='{{true}}' bindinput='seedPassword' class='login' placeholder='密码'></input>
   </view>
   <view class='login-btn-box'>
     <a bindtap="goToSetPassword" class="login-btn btn1">忘记密码</a>
@@ -17,6 +18,35 @@
     <button bindtap='loginEnd' class="login-btn btn2 butRight but">登录</button>
   </view>
 </view>
+
+<!--这是显示的我的信息列表  -->
 <view wx:if="{{isShow}}">
-  这是我的页面
+<!--这是 显示的头部信息  -->
+  <view class='myHeader'>
+    <image src='https://web-app-yingxionghui.oss-cn-beijing.aliyuncs.com/back/me_moren.png' class='myHeaderImg'></image>
+    <view class='myInfo'>
+      <text class='myInfoText myInfoTextOne'>GolfYang</text>
+      <text class='myInfoText'>编辑个人资料</text>
+    </view>
+    <view>
+      <text class='myHeaderNext'> > </text>
+    </view>
+  </view>
+  <!--这是显示的消息轮播  -->
+  <view class='myInfoSwiper'>
+    <image class='myInfoSwiperIcon' src='https://mhero.pinhui100.com/WebApp/img/mine_notice.png'></image>
+    <view>
+      <swiper class='myInfoSwiperBox' autoplay="{{true}}" interval="{{2000}}" circular="{{true}}">
+        <swiper-item>这是消息一</swiper-item>
+        <swiper-item>这是消息二</swiper-item>
+      </swiper>
+    </view>
+  </view>
+  <!--这是显示的我的里面的一些功能  -->
+  <view wx:key="{{index}}" wx:for="{{myLists}}" class='myInfoSwiper'> 
+    <image class='myInfoSwiperIcon' src='{{item.url}}'></image>
+    <view>
+      <text id='{{index}}' bindtap='listEvent' class='myInfoSwiperBox'>{{item.content}}</text>
+    </view>
+  </view>
 </view>

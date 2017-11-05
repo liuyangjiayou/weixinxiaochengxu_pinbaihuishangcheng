@@ -54,4 +54,64 @@
   background-color: #fd5959;
   color: #fff;
 }
+
 /*这是个人信息的样式  */
+.myHeader{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 190rpx;
+  padding: 28rpx 20rpx 0 40rpx;
+  box-sizing: border-box;
+}
+.myHeaderImg{
+  width: 140rpx;
+  height: 140rpx;
+}
+.myInfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 40rpx;
+  padding: 30rpx 0;
+  box-sizing: border-box;
+  width: 216rpx;
+  font-size: 28rpx;
+}
+.myInfoText{
+  height: 44rpx;
+  line-height: 44rpx;
+  color: #ccc;
+}
+.myInfoTextOne{
+  color: #999;
+}
+.myHeaderNext{
+  display: inline-block;
+  margin-left: 230rpx;
+  margin-top: 40rpx;
+  text-align: center;
+}
+/*这是我的消息的轮播图的效果样式  */
+.myInfoSwiper,myInfoNavList{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 20rpx 0 40rpx;
+  height:  80rpx;
+}
+.myInfoSwiperIcon{
+  margin-right: 25rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+.myInfoSwiperBox{
+  width: 625rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 24rpx;
+}
+/* 这是显示的我的功能的列表导航  */
+.myInfoNavList{
+  padding:0 20rpx 0 40rpx;
+}
