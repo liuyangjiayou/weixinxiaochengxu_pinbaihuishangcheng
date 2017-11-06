@@ -34,6 +34,12 @@
 					"name": "每日推",
 					"pathName": "pages/everyday/everyday",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "惠生活",
+					"pathName": "pages/huishenghuo/huishenghuo",
+					"query": ""
 				}
 			]
 		}

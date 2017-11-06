@@ -9,6 +9,7 @@
   width: 100%;
   height: 260rpx;
 }
+/*四个分类导航  */
 .nav-list{
   display: flex;
   flex-direction: row;
@@ -33,6 +34,7 @@
   font-size: 24rpx;
   margin-top: 10rpx;
 }
+/*横向滚动模块  */
 .nav-scroll-box{
   height: 84rpx;
   white-space: nowrap;
@@ -44,6 +46,9 @@
   line-height: 84rpx;
   text-align: center;
   font-size: 28rpx;
+}
+.active{
+  color : red
 }
 /*商品列表样式  */
 .list-box{

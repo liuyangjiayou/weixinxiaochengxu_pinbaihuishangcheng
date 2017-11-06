@@ -99,7 +99,6 @@ Page({
         method: 'POST',
         dataType: 'json',
         success: function (res) {
-
           that.setData({
             commodityList: [...that.data.commodityList, ...res.data.data]
           })
@@ -164,7 +163,6 @@ Page({
   },
   // 点击导航选项显示切换类名，并且展示不同给的商品
   changClass(e) {
-    console.log(e)
     if (e.currentTarget.id == 0){
       this.setData({
         num: e.currentTarget.id

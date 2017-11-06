@@ -1,3 +1,12 @@
-<view>
-  我是会声会影
-</view>
+<!--惠生活swiper  -->
+<swiper class='huishenghuo-box' indicator-dots="{{true}}" indicator-color="#ccc" indicator-active-color="#007aff" circular="{{true}}">
+  <swiper-item>
+    <image class='huishenghuo-box-img' src='https://web-app-yingxionghui.oss-cn-beijing.aliyuncs.com/back/huiLife1.png'></image>
+  </swiper-item>
+  <swiper-item>
+    <image class='huishenghuo-box-img' src='https://web-app-yingxionghui.oss-cn-beijing.aliyuncs.com/back/huiLife2.jpg'></image>
+  </swiper-item>
+  <swiper-item>
+    <image class='huishenghuo-box-img' src='https://web-app-yingxionghui.oss-cn-beijing.aliyuncs.com/back/huiLife3.png'></image>
+  </swiper-item>
+</swiper>

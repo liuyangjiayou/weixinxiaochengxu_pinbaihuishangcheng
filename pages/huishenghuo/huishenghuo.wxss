@@ -1,0 +1,8 @@
+.huishenghuo-box{
+  width: 100%;
+  height: 260rpx;
+}
+.huishenghuo-box-img{
+  width: 100%;
+  height: 100%;
+}
