@@ -1,51 +1,52 @@
-.swiper-box{
+.headerImg{
   width: 100%;
   height: 260rpx;
 }
-.swiper-box-item{
-  width: 100%
-}
-.swiper-item-img{
-  width: 100%;
-  height: 260rpx;
-}
-.nav-list{
-  display: flex;
-  flex-direction: row;
+.scroll-box{
+  padding-top: 80rpx;
   box-sizing: border-box;
-  padding: 0 32.5rpx;
-  width: 100%;
-  height: 160rpx;
-}
-.nav-list-item{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex: 1;
-  height: 160rpx;
-}
-.nav-list-item-img{
-  margin-top: 20rpx;
-  width: 80rpx;
-  height: 80rpx;
-}
-.nav-list-item-text{
-  font-size: 24rpx;
-  margin-top: 10rpx;
-}
-.nav-scroll-box{
-  height: 84rpx;
+  height:  540rpx;
   white-space: nowrap;
 }
 .scroll-item{
   display: inline-block;
-  width: 150rpx;
-  height: 84rpx;
-  line-height: 84rpx;
-  text-align: center;
+  padding-left: 114rpx;
+  box-sizing: border-box;
+  width: 616rpx;
+  height: 470rpx;
+}
+.scroll-item-img{
+  width: 480rpx;
+  height:  460rpx;
+}
+.scroll-item-end{
+  margin-right: 90rpx;
+}
+/*navList样式  */
+.navList{
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  padding: 0 40rpx;
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.navList-item{
+  display: flex;
+  flex: 1;
+  justify-content: center;
   font-size: 28rpx;
 }
+.active{
+  box-sizing: border-box;
+  color: #FF1C40;
+  border-bottom: 1rpx solid #FF1C40;
+}
 /*商品列表样式  */
+.listBox{
+  margin-top: 20rpx; 
+}
 .list-box{
   display: flex;
   flex-direction: row;
@@ -82,7 +83,7 @@
 }
 .list-box-right-price{
   display: flex;
-  flex: 4;
+  flex: 3;
   flex-direction: column;
   justify-content: flex-end;
   margin-bottom: 24rpx;
@@ -104,6 +105,9 @@
 .text{
   font-size: 24rpx;
   line-height: 32rpx;
+}
+.comment{
+  margin-left: 10rpx; 
 }
 .list-box-right-icontext{
   font-size: 24rpx;

@@ -28,6 +28,12 @@
 					"name": "我的信息",
 					"pathName": "pages/myInfo/myInfo",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "每日推",
+					"pathName": "pages/everyday/everyday",
+					"query": ""
 				}
 			]
 		}

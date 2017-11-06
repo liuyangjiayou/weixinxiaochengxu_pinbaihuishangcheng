@@ -54,5 +54,17 @@ Page({
         })
       },
     })
-  }
+  },
+  // 跳转到每日推界面
+  goToEveryDay(){
+    wx.navigateTo({
+      url: '../everyday/everyday',
+    })
+  },
+  // 跳转到惠生活
+  goToHuiShengHuo(){
+    wx.navigateTo({
+      url: '../huishenghuo/huishenghuo',
+    })
+  },
 })

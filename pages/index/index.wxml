@@ -19,11 +19,11 @@
   </swiper>
   <!--这是导航列表  -->
   <view class='nav-list'>
-    <view class='nav-list-item'>
+    <view bindtap='goToEveryDay' class='nav-list-item'>
       <image src='https://web-app-yingxionghui.oss-cn-beijing.aliyuncs.com/back/daily.png' class='nav-list-item-img'></image>
       <text class='nav-list-item-text'>每日推</text>
     </view>
-    <view class='nav-list-item'>
+    <view bindtap='goToHuiShengHuo' class='nav-list-item'>
       <image src='https://web-app-yingxionghui.oss-cn-beijing.aliyuncs.com/back/huilife.png' class='nav-list-item-img'></image>
       <text class='nav-list-item-text'>惠生活</text>
     </view>

@@ -1,0 +1,46 @@
+<!--每日推上面的头部展示图  -->
+<view>
+  <image class='headerImg' src='https://web-app-yingxionghui.oss-cn-beijing.aliyuncs.com/back/meiritui1.jpg'></image>
+</view>
+<!--每日推横向滚动模块  -->
+<view>
+  <scroll-view scroll-x="{{true}}" class='scroll-box'>
+    <view class='scroll-item'>
+      <image class='scroll-item-img' src='https://web-app-yingxionghui.oss-cn-beijing.aliyuncs.com/back/details1.jpg'></image>
+    </view>
+    <view class='scroll-item'>
+      <image class='scroll-item-img scroll-item-end' src='https://web-app-yingxionghui.oss-cn-beijing.aliyuncs.com/back/details1.jpg'></image>
+    </view>
+    <view class='scroll-item scroll-item-end'>
+      <image class='scroll-item-img' src='https://web-app-yingxionghui.oss-cn-beijing.aliyuncs.com/back/details1.jpg'></image>
+    </view>
+  </scroll-view>
+</view>
+<!--以下是nav导航  -->
+<view class='navList'>
+  <text bindtap='changClass' data-num="{{index}}" id="{{index}}" wx:key="{{index}}" wx:for="{{navList}}" class="{{index == num ? 'navList-item active' : 'navList-item'}}">{{item.name}}</text>
+</view>
+
+<!--商品列表  -->
+<view class='listBox'>
+  <view class='list-box' wx:for="{{commodityList}}" wx:key="{{index}}">
+    <view class='list-box-left'>
+      <image style='width:220rpx;height:220rpx;' src='{{urlHeader + item.img}}'></image>
+    </view>
+    <view class='list-box-right'>
+      <view class='list-box-right-title'>{{item.name}}</view>
+      <view class='list-box-right-content'>
+        <view class='list-box-right-price'>
+          <text class='text'>现价:<text class='text'>{{item.shop}}</text> </text>
+          <text class='text'>市场价:<text class='text'>{{item.market}}</text> </text>
+          <text class='text'><text class='text'>库存量：{{item.sum}}件</text>
+          <text class='comment'>评论：{{item.evaluation_sum}}条</text></text>
+        </view>
+        <view class='list-box-right-iconBox'>
+          <image src='https://web-app-yingxionghui.oss-cn-beijing.aliyuncs.com/back/popularize.png' class='list-box-right-iconImg'></image>
+          <text class='list-box-right-icontext'>返{{item.percentage}}%</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

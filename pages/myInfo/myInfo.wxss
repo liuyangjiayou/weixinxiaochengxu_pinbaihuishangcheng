@@ -22,7 +22,7 @@
   width: 630rpx;
   height: 64rpx;
   border-bottom: 1rpx solid #ccc;
-  font-size: 24rpx;
+  font-size: 30rpx;
   text-align: left;
 }
 
@@ -109,7 +109,7 @@
   width: 625rpx;
   height: 80rpx;
   line-height: 80rpx;
-  font-size: 24rpx;
+  font-size: 30rpx;
 }
 /* 这是显示的我的功能的列表导航  */
 .myInfoNavList{

@@ -5,7 +5,9 @@
     "pages/design/design",
     "pages/myInfo/myInfo",
     "pages/signIn/signIn",
-    "pages/setPassword/setPassword"
+    "pages/setPassword/setPassword",
+    "pages/everyday/everyday",
+    "pages/huishenghuo/huishenghuo"
   ],
   "window":{
     "navigationBarBackgroundColor": "#e32615",
