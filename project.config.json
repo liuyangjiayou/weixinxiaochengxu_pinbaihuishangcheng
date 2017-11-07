@@ -21,7 +21,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
+			"current": 3,
 			"list": [
 				{
 					"id": -1,
@@ -39,6 +39,12 @@
 					"id": -1,
 					"name": "惠生活",
 					"pathName": "pages/huishenghuo/huishenghuo",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "设计圈",
+					"pathName": "pages/design/design",
 					"query": ""
 				}
 			]

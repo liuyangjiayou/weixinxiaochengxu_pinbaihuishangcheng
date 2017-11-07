@@ -1,0 +1,149 @@
+/*这是注册登录表单的样式  */
+.login-logo {
+  width: 100%;
+  padding: 120rpx 0;
+  text-align: center;
+}
+
+.login-logo-img {
+  width: 380rpx;
+  height: 100rpx;
+}
+
+.login-input {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 50rpx;
+  text-align: center;
+}
+
+.login {
+  width: 630rpx;
+  height: 64rpx;
+  border-bottom: 1rpx solid #ccc;
+  font-size: 30rpx;
+  text-align: left;
+}
+
+.login-btn-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 60rpx;
+  margin-top: 100rpx;
+  box-sizing: border-box;
+  width: 100%;
+}
+.login-btn{
+  font-size: 24rpx;
+}
+.btn2{
+  color: red;
+}
+.but{
+  width: 230rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 28rpx;
+  background-color: #ccc;
+  color: #fff;
+  font-weight: 900;
+}
+.butRight{
+  background-color: #fd5959;
+  color: #fff;
+}
+/*这是朋友圈头部列表  */
+.friend-list-header{
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 72rpx;
+  font-size: 28rpx;
+}
+.friend-list-header-icon{
+  display: flex;
+  margin-right: 12rpx;
+  width: 28rpx;
+  height: 12rpx;
+  background-color: red;
+}
+.friend-header-more{
+  margin-left: 510rpx;
+  display: flex;
+  font-size: 24rpx;
+  color: #ccc;
+}
+.friend-list-body{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 60rpx 40rpx 20rpx 40rpx;
+  width: 100%;
+  height: 440rpx;
+}
+.friend-list-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 292rpx;
+  height: 378rpx;
+  border: 1rpx solid #eee;
+  font-size: 28rpx;
+}
+.info-img{
+  margin-top: 32rpx;
+  width: 100rpx;
+  height: 100rpx;
+   border-radius: 50%;
+}
+.friend-name{
+  margin-top: 20rpx;
+}
+.friend-style{
+  margin-top: 20rpx;
+  width: 200rpx;
+  text-align: center;
+  font-size: 22rpx;
+  font-weight: 900;
+  color: #ccc;
+}
+.add-friend{
+  margin-top: 42rpx;
+  width: 144rpx;
+  height: 44rpx;
+  line-height: 44rpx;
+  border: 1rpx solid red;
+  border-radius: 22rpx;
+  text-align: center;
+  font-size: 22rpx;
+  color: red;
+}
+/*实名动态与匿名动态导航  */
+.autonym-nav{
+  display: flex;
+  flex-direction: row;
+  margin: 20rpx 0;
+  width: 100%;
+  height: 82rpx;
+}
+.autonym-nav-text{
+  width: 135rpx;
+  height: 82rpx;
+  line-height: 82rpx;
+  text-align: center;
+  font-size: 25rpx;
+  color: #999;
+  margin-left: 100rpx;
+}
+.text-right{
+  margin-left: 265rpx;
+}
+.active{
+  box-sizing: border-box;
+  border-bottom: 1rpx solid red;
+}
